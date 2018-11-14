@@ -1,14 +1,25 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+      @author fernandoepm1
+*/
+
 package components;
 
-/**
- *
- * @author alunoti
- */
+import java.util.ArrayList;
+
 public class Word {
-    
+      private ArrayList<String> categories = {
+            "Partes do corpo",
+            "Frutas",
+            "Animais",
+            "Objetos"
+      };
+      
+      private String[][] storage = {
+            { "Cabelo" }, { "Ombro" }, { "Joelho" }, { "Pé" },
+            { "Manga" }, { "Caju" }, { "Cajá" }, { "Abacaxi" }, { "Jabuticaba" } 
+      };
+      
+      public void mostrar() {
+            System.out.println(storage[0][1]);
+      }
 }
